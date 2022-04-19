@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    return sequelize.define('', {
+    return sequelize.define('Moon', {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        circumference: {
+        diameter: {
             type: DataTypes.INTEGER,
             allowNull: false
         },

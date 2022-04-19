@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    return sequelize.define('', {
+    return sequelize.define('Planet', {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -9,15 +9,11 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        periapsis: {
+        distance: {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        apoapsis: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        circumference: {
+        diameter: {
             type: DataTypes.INTEGER,
             allowNull: false
         },
@@ -31,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         moons: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         }
     }, {
         timestamps: true,
