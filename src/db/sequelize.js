@@ -31,6 +31,7 @@ const initDb = () => {
                 diameter: el.diameter,
                 day_duration: el.day_duration,
                 orbital_duration: el.orbital_duration,
+                type: el.type,
                 moons: el.moons
             })
         })

@@ -25,6 +25,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.FLOAT,
             allowNull: false
         },
+        type: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         moons: {
             type: DataTypes.TEXT,
             allowNull: false,

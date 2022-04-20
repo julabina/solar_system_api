@@ -6,7 +6,7 @@ const sequelize = require('./src/db/sequelize');
 const app = express();
 const port = 3000;
 
-/* sequelize.initDb(); */
+ /* sequelize.initDb();  */
 
 app
     .use(morgan('dev'))
@@ -14,6 +14,7 @@ app
 
 
 require('./src/routes/findAllPlanet')(app);
+require('./src/routes/findOnePlanet')(app);
 require('./src/routes/findAllMoon')(app);
 require('./src/routes/findAllSatellite')(app);
 require('./src/routes/createNewSatellite')(app);
