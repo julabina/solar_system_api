@@ -17,12 +17,8 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        diameter: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
         orbital_duration: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             allowNull: false
         },
         orbitOn: {

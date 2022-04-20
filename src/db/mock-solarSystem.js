@@ -5,7 +5,7 @@ const planets = [
         diameter: 4879,
         day_duration: 175.94,
         orbital_duration: 87.97,
-        moons : null
+        moons : []
     },
     {
         name: "Venus",
@@ -13,7 +13,7 @@ const planets = [
         diameter: 12104,
         day_duration: 243.16,
         orbital_duration: 224.7,
-        moons : null
+        moons : []
     },
     {
         name: "Terre",
@@ -61,7 +61,8 @@ const planets = [
         diameter: 51118,
         day_duration: 17.24,
         orbital_duration: 30687,
-        moons : []
+        moons : ["Cordélia", "Ophélie", "Bianca", "Cressida", "Desdémone", "Juliette", "Portia", "Rosalinde", "Cupid", "Belinda", "Perdita", "Puck", "Mab", "Miranda", "Ariel", "Umbriel", "Titania", "Obéron",
+            "Francisco", "Caliban", "Stephano", "Trinculo", "Sycorax", "Margaret", "Prospero", "Setebos", "Ferdinand"]
     },
     {
         name: "Neptune",
@@ -69,16 +70,181 @@ const planets = [
         diameter: 49244,
         day_duration: 16.1,
         orbital_duration: 60182,
-        moons : []
+        moons : ["Naïade", "Thalassa", "Despina", "Galatée", "Larissa", "Hippocampe", "Protée", "Triton", "Néréide", "Halimède", "Sao", "Laomédie", "Psamathée", "Néso"]
     }
 ];
 
 const moons = [
-
+    {
+        name: "Phobos",
+        periapsis: 9236,
+        apoapsis: 9519,
+        diameter: 12.4,
+        orbital_duration: 0.32,
+        orbitOn: "Mars"
+    },
+    {
+        name: "Deimos",
+        periapsis: 23450,
+        apoapsis: 23466,
+        diameter: 22.2,
+        orbital_duration: 1.26,
+        orbitOn: "Mars"
+    },
+    {
+        name: "Lune",
+        periapsis: 362600,
+        apoapsis: 405400,
+        diameter: 3474.8,
+        orbital_duration: 27.32,
+        orbitOn: "Terre"
+    },
+    {
+        name: "Europe",
+        periapsis: 664792,
+        apoapsis: 677408,
+        diameter: 3121.6,
+        orbital_duration: 3.55,
+        orbitOn: "Jupiter"
+    },
+    {
+        name: "Io",
+        periapsis: 420071,
+        apoapsis: 423529,
+        diameter: 3643.2,
+        orbital_duration: 1.769,
+        orbitOn: "Jupiter"
+    },
+    {
+        name: "Ganymède",
+        periapsis: 1069008,
+        apoapsis: 1071792,
+        diameter: 5262.4,
+        orbital_duration: 7.16,
+        orbitOn: "Jupiter"
+    },
+    {
+        name: "Callisto",
+        periapsis: 1868768,
+        apoapsis: 1896632,
+        diameter: 4820.6,
+        orbital_duration: 16.70,
+        orbitOn: "Jupiter"
+    },
+    {
+        name: "Mimas",
+        periapsis: 181902,
+        apoapsis: 189176,
+        diameter: 396.5,
+        orbital_duration: 0.94,
+        orbitOn: "Saturne"
+    },
+    {
+        name: "Encelade",
+        periapsis: 236918,
+        apoapsis: 239156,
+        diameter: 504.2,
+        orbital_duration: 1.37,
+        orbitOn: "Saturne"
+    },
+    {
+        name: "Téthys",
+        periapsis: 294643,
+        apoapsis: 294701,
+        diameter: 1066,
+        orbital_duration: 1.89,
+        orbitOn: "Saturne"
+    },
+    {
+        name: "Dione",
+        periapsis: 376585,
+        apoapsis: 378245,
+        diameter: 1123.4,
+        orbital_duration: 2.74,
+        orbitOn: "Saturne"
+    },
+    {
+        name: "Rhéa",
+        periapsis: 562541,
+        apoapsis: 527595,
+        diameter: 1528.6,
+        orbital_duration: 4.52,
+        orbitOn: "Saturne"
+    },
+    {
+        name: "Titan",
+        periapsis: 1186675,
+        apoapsis: 1257055,
+        diameter: 5149.4,
+        orbital_duration: 15.95,
+        orbitOn: "Saturne"
+    },
+    {
+        name: "Japet",
+        periapsis: 3456518,
+        apoapsis: 3665184,
+        diameter: 1471.2,
+        orbital_duration: 79.33,
+        orbitOn: "Saturne"
+    },
+    {
+        name: "Miranda",
+        periapsis: 129731,
+        apoapsis: 130069,
+        diameter: 471.6,
+        orbital_duration: 1.41,
+        orbitOn: "Uranus"
+    },
+    {
+        name: "Ariel",
+        periapsis: 190671,
+        apoapsis: 191129,
+        diameter: 1157.8,
+        orbital_duration: 2.52,
+        orbitOn: "Uranus"
+    },
+    {
+        name: "Umbriel",
+        periapsis: 264963,
+        apoapsis: 267037,
+        diameter: 1169.4,
+        orbital_duration: 4.14,
+        orbitOn: "Uranus"
+    },
+    {
+        name: "Titania",
+        periapsis: 435820,
+        apoapsis: 436780,
+        diameter: 1577.8,
+        orbital_duration: 8.71,
+        orbitOn: "Uranus"
+    },
+    {
+        name: "Oberon",
+        periapsis: 582683,
+        apoapsis: 584317,
+        diameter: 1522.8,
+        orbital_duration: 13.46,
+        orbitOn: "Uranus"
+    },
+    {
+        name: "Triton",
+        periapsis: 354753,
+        apoapsis: 354765,
+        diameter: 2706.8,
+        orbital_duration: 5.88,
+        orbitOn: "Neptune"
+    }
 ];
 
 const satellites = [
-
+    {
+        name: "Iss",
+        periapsis: 415000,
+        apoapsis: 421000,
+        orbital_duration: 0.16,
+        orbitOn: "Terre"
+    }
 ];
 
 module.exports = {

@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         },
         distance: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             allowNull: false
         },
         diameter: {
@@ -18,16 +18,22 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         },
         day_duration: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             allowNull: false
         },
         orbital_duration: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             allowNull: false
         },
         moons: {
-            type: DataTypes.STRING,
-            allowNull: true
+            type: DataTypes.TEXT,
+            allowNull: false,
+            get() {
+                return this.getDataValue('moons').split(',')
+            },
+            set(moons) {
+                return this.setDataValue('moons', moons.join())
+            }
         }
     }, {
         timestamps: true,
