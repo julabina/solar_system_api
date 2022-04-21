@@ -89,7 +89,7 @@ const moons = [
         apoapsis: 9519,
         diameter: 12.4,
         orbital_duration: 0.32,
-        orbitOn: "Mars"
+        orbitOn: "mars"
     },
     {
         name: "Deimos",
@@ -97,7 +97,7 @@ const moons = [
         apoapsis: 23466,
         diameter: 22.2,
         orbital_duration: 1.26,
-        orbitOn: "Mars"
+        orbitOn: "mars"
     },
     {
         name: "Lune",
@@ -105,7 +105,7 @@ const moons = [
         apoapsis: 405400,
         diameter: 3474.8,
         orbital_duration: 27.32,
-        orbitOn: "Terre"
+        orbitOn: "terre"
     },
     {
         name: "Europe",
@@ -113,7 +113,7 @@ const moons = [
         apoapsis: 677408,
         diameter: 3121.6,
         orbital_duration: 3.55,
-        orbitOn: "Jupiter"
+        orbitOn: "jupiter"
     },
     {
         name: "Io",
@@ -121,7 +121,7 @@ const moons = [
         apoapsis: 423529,
         diameter: 3643.2,
         orbital_duration: 1.769,
-        orbitOn: "Jupiter"
+        orbitOn: "jupiter"
     },
     {
         name: "Ganymède",
@@ -129,7 +129,7 @@ const moons = [
         apoapsis: 1071792,
         diameter: 5262.4,
         orbital_duration: 7.16,
-        orbitOn: "Jupiter"
+        orbitOn: "jupiter"
     },
     {
         name: "Callisto",
@@ -137,7 +137,7 @@ const moons = [
         apoapsis: 1896632,
         diameter: 4820.6,
         orbital_duration: 16.70,
-        orbitOn: "Jupiter"
+        orbitOn: "jupiter"
     },
     {
         name: "Mimas",
@@ -145,7 +145,7 @@ const moons = [
         apoapsis: 189176,
         diameter: 396.5,
         orbital_duration: 0.94,
-        orbitOn: "Saturne"
+        orbitOn: "saturne"
     },
     {
         name: "Encelade",
@@ -153,7 +153,7 @@ const moons = [
         apoapsis: 239156,
         diameter: 504.2,
         orbital_duration: 1.37,
-        orbitOn: "Saturne"
+        orbitOn: "saturne"
     },
     {
         name: "Téthys",
@@ -161,7 +161,7 @@ const moons = [
         apoapsis: 294701,
         diameter: 1066,
         orbital_duration: 1.89,
-        orbitOn: "Saturne"
+        orbitOn: "saturne"
     },
     {
         name: "Dione",
@@ -169,7 +169,7 @@ const moons = [
         apoapsis: 378245,
         diameter: 1123.4,
         orbital_duration: 2.74,
-        orbitOn: "Saturne"
+        orbitOn: "saturne"
     },
     {
         name: "Rhéa",
@@ -177,7 +177,7 @@ const moons = [
         apoapsis: 527595,
         diameter: 1528.6,
         orbital_duration: 4.52,
-        orbitOn: "Saturne"
+        orbitOn: "saturne"
     },
     {
         name: "Titan",
@@ -185,7 +185,7 @@ const moons = [
         apoapsis: 1257055,
         diameter: 5149.4,
         orbital_duration: 15.95,
-        orbitOn: "Saturne"
+        orbitOn: "saturne"
     },
     {
         name: "Japet",
@@ -193,7 +193,7 @@ const moons = [
         apoapsis: 3665184,
         diameter: 1471.2,
         orbital_duration: 79.33,
-        orbitOn: "Saturne"
+        orbitOn: "saturne"
     },
     {
         name: "Miranda",
@@ -201,7 +201,7 @@ const moons = [
         apoapsis: 130069,
         diameter: 471.6,
         orbital_duration: 1.41,
-        orbitOn: "Uranus"
+        orbitOn: "uranus"
     },
     {
         name: "Ariel",
@@ -209,7 +209,7 @@ const moons = [
         apoapsis: 191129,
         diameter: 1157.8,
         orbital_duration: 2.52,
-        orbitOn: "Uranus"
+        orbitOn: "uranus"
     },
     {
         name: "Umbriel",
@@ -217,7 +217,7 @@ const moons = [
         apoapsis: 267037,
         diameter: 1169.4,
         orbital_duration: 4.14,
-        orbitOn: "Uranus"
+        orbitOn: "uranus"
     },
     {
         name: "Titania",
@@ -225,7 +225,7 @@ const moons = [
         apoapsis: 436780,
         diameter: 1577.8,
         orbital_duration: 8.71,
-        orbitOn: "Uranus"
+        orbitOn: "uranus"
     },
     {
         name: "Oberon",
@@ -233,7 +233,7 @@ const moons = [
         apoapsis: 584317,
         diameter: 1522.8,
         orbital_duration: 13.46,
-        orbitOn: "Uranus"
+        orbitOn: "uranus"
     },
     {
         name: "Triton",
@@ -241,7 +241,7 @@ const moons = [
         apoapsis: 354765,
         diameter: 2706.8,
         orbital_duration: 5.88,
-        orbitOn: "Neptune"
+        orbitOn: "neptune"
     }
 ];
 
@@ -251,7 +251,7 @@ const satellites = [
         periapsis: 415000,
         apoapsis: 421000,
         orbital_duration: 0.16,
-        orbitOn: "Terre"
+        orbitOn: "terre"
     }
 ];
 
