@@ -15,7 +15,7 @@ module.exports = (app) => {
             if(error instanceof UniqueConstraintError) {
                 return res.status(400).json({message: error.message, data: error})
             }
-            const message = 'Le satellite n\'a pas pu etre ajoutée, essayer ultérieurement.';
+            const message = 'Le satellite n\'a pas pu etre ajouté, essayer ultérieurement.';
             res.status(500).json({message, data: error});
         })
     })

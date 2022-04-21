@@ -15,6 +15,10 @@ module.exports = (app) => {
                 const message = `Le satellite ${satelliteDeleted.id} a bien été supprimé.`;
                 res.json({message, data: satelliteDeleted})
             })
+            .catch(error => {
+                const message = 'Le satellite n\'a pas pu etre supprimé, essayer ultérieurement.';
+                res.status(500).json({message, data: error})
+            })
         })
     })
 }
