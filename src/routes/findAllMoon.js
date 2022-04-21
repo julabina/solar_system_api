@@ -26,6 +26,10 @@ module.exports = (app) => {
                              const message = `Il y a ${count} lunes qui correspondent à la recherche.`;
                              res.json({message, data: rows}) 
                          })
+                         .catch(error => {
+                            const message = 'La liste des lunes n\'a pas pu etre récupérée, essayer ultérieurement';
+                            res.status(500).json({message, data: error});
+                        })
                     } 
                  })
              
@@ -44,6 +48,10 @@ module.exports = (app) => {
                     const message = `Il y a ${count} lunes qui correspondent à la recherche.`;
                     res.json({message, data: rows}) 
                  })
+                 .catch(error => {
+                    const message = 'La liste des lunes n\'a pas pu etre récupérée, essayer ultérieurement';
+                    res.status(500).json({message, data: error});
+                })
              }
 
             
@@ -58,6 +66,10 @@ module.exports = (app) => {
                         .then(({count, rows}) => {
                             const message = `Il y a ${count} lunes qui correspondent à la recherche.`;
                             res.json({message, data: rows}) 
+                        })
+                        .catch(error => {
+                            const message = 'La liste des lunes n\'a pas pu etre récupérée, essayer ultérieurement';
+                            res.status(500).json({message, data: error});
                         })
                     } 
                 })
@@ -74,6 +86,10 @@ module.exports = (app) => {
                     const message = 'La liste des lunes a bien été récupérée.';
                     res.json({message, data: moons})
                 }) 
+                .catch(error => {
+                    const message = 'La liste des lunes n\'a pas pu etre récupérée, essayer ultérieurement';
+                    res.status(500).json({message, data: error});
+                })
 
             }
         }

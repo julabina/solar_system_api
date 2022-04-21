@@ -18,6 +18,7 @@ require('./src/routes/findOnePlanet')(app);
 require('./src/routes/findAllMoon')(app);
 require('./src/routes/findOneMoon')(app);
 require('./src/routes/findAllSatellite')(app);
+require('./src/routes/findOneSatellite')(app);
 require('./src/routes/createNewSatellite')(app);
 require('./src/routes/updateSatellite')(app);
 require('./src/routes/deleteSatellite')(app);
